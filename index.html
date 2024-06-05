@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-edukids-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Edu Kids</title>
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <div class="izquierda">
+            <a href="index.html"><img src="logo-edukids-removebg-preview.png" alt="Logo" draggable="false"></a>
+        </div>
+
+        <div class="derecha">
+            <a href="index_vocales.html">Vocales</a>
+            <a href="index_trasnporte.html">Medios de Transporte</a>
+            <a href="index_memoria.html">Clasificación de Animales</a>
+        </div>
+    </nav>
+
+    <h1 class="title">¡Juegos y Recursos Didacticos!</h1>
+
+    <div class="banner">
+        <img src="fondo2c.jpg" alt="">
+    </div>
+
+    <div class="descrip">
+        <div class="info_pag">
+            <img src="android-brain_icon-icons.com_66654.png" alt="" width="350px">
+        </div>
+
+        <!-- INICIA CONTAINER DE ARRIBA -->
+        <div class="info_juegos">
+            <p>En esta página encontraras juegos y recursos didacticos con los cuales tus hijos de 3 - 6 años podran
+                aprender temas importantes durante su desarrollo y asi poder tener una herramienta que les de un impulso
+                muy grande durante su desarrollo.
+            </p>
+
+            <div class="izquierda"><img src="mano-removebg-preview.png" alt="Logo" draggable="false" width="200px"></div>
+        </div>
+    </div>
+    <!--  TERMINA CONTAINER DE ARRIBA -->
+
+    <!-- INICIA CONTAINER DE ABAJO -->
+    <div class="extra">
+        <div class="info_pag">
+            <p>Lista de nuestos juegos disponibles:</p>
+            <ul class="lista">
+                <span class="l1"><li>Juego de Vocales:</li></span>
+                <p>Un divertido juego donde tendras que conectar las vocales en orden, veras un video y asi pondras a prueba tus habilidades.</p>
+                <span class="l1"><li>Medios de Transporte:</li></span>
+                <p>Aparte de tener videos de cada tipo de transporte tendras que adivinar cual es el correcto entre 2
+                    opciones.</p>
+                <span class="l1"><li>Clasificación de animales:</li></span>
+                <p>Una memoria ambientada en los animales, tendras que crear sus parejas correctas para completar el
+                    juego.</p>
+        </div>
+
+        <div class="info_juegos">
+            <img src="031gears_101495.png" alt="" width="200px">
+        </div>
+    </div>
+    <!-- TERMINA CONTAINER DE ABAJO -->
+
+    <h1 class="menu_txt">Ahora que sabes lo basico, ¿que deseas jugar hoy?</h1>
+    <div class="juegos_menu">
+        <div class="vocales">
+            <img src="cartas.png" alt="" width="400px">
+        </div>
+        <div class="transporte">
+            <img src="carro circulo.png"alt="">
+        </div>
+        <div class="animales">
+            <img src="panda.png" alt="">
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="button"><span>¡Vamos a Jugar! </span></button>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+    <!-- ------------------------------------------SCRIPT----------------------------------------------------- -->
+
+    <script>
+
+const juegos = document.querySelectorAll('.juegos_menu div');
+juegos.forEach(juego => {
+    juego.addEventListener('click', () => {
+        juegos.forEach(j => j.classList.remove('selected'));
+        juego.classList.add('selected');
+    });
+});
+
+const boton = document.querySelector('.button');
+boton.addEventListener('click', () => {
+    const juegoSeleccionado = document.querySelector('.juegos_menu .selected');
+    let link;
+    switch (juegoSeleccionado.classList[0]) {
+        case 'vocales':
+            link = 'index_vocales.html';
+            break;
+        case 'transporte':
+            link = 'index_trasnporte.html';
+            break;
+        case 'animales':
+            link = 'index_memoria.html';
+            break;
+        default:
+            link = '';
+    }
+    if (link !== '') {
+        window.location.href = link;
+    }
+});
+
+    </script>
+
+</body>
+
+</html>

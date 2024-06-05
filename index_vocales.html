@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Vocales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="izquierda">
+            <a href="index.html"><img src="logo-edukids-removebg-preview.png" alt="Logo" draggable="false"></a>
+        </div>
+        <div class="derecha"></div>
+            <a href="index_vocales.html">Vocales</a>
+            <a href="index_trasnporte.html">Medios de Transporte</a>
+            <a href="index_memoria.html">Clasificación de Animales</a>
+        </div>
+    </nav>
+
+
+    <div id="intro">
+        <h1>¡Aprendamos las Vocales!</h1>
+        <p>Las vocales son las letras A, E, I, O, U. ¡Vamos a aprender y jugar con ellas!</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HjOOGujV-LU?si=w1-o9nPpey7N3DVv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>Selecciona una secuencia para comenzar el juego:</p>
+        <button class="sequenceButton" data-sequence="I,U,E,A,O">I, U, E, A, O</button>
+        <button class="sequenceButton" data-sequence="E,I,O,U,A">E, I, O, U, A</button>
+    </div>
+
+    <div id="game" style="display:none;">
+        <h1>Conecta las Vocales</h1>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <button id="resetButton">Reiniciar</button>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

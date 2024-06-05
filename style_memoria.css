@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #CBDA6A;
+  background-image: url("fondo-loteria.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: IN 1s forwards;
+}
+
+.nav-bar .izquierda img {
+  max-width: 160px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #ff9a8d;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.titulo {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info-animales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.animal {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.animal img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.animal h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.animal p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.card.flipped img {
+  display: block;
+}
+
+.card.matched {
+  background-color: #CBDA6A;
+  cursor: default;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: auto;
+  }
+
+  .nav-bar .derecha {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-bar .izquierda img {
+    width: 150px;
+  }
+
+  .nav-bar a {
+    font-size: 16px;
+  }
+
+  .info-animales {
+    flex-direction: column;
+  }
+
+  .animal {
+    width: 100%;
+  }
+
+  .game-board {
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(8, 100px);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: auto;
+  }
+
+  .nav-bar .derecha {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-bar .izquierda img {
+    width: 150px;
+  }
+
+  .nav-bar a {
+    font-size: 16px;
+  }
+
+  .info-animales {
+    flex-direction: column;
+  }
+
+  .animal {
+    width: 100%;
+  }
+
+  .game-board {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(6, 100px);
+  }
+}

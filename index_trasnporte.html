@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medios de Transporte - ¡Aprende y Diviértete!</title>
+    <link rel="stylesheet" href="style_transporte.css">
+    <script>
+        function checkAnswer(question, correctAnswer, resultElementId) {
+            var userAnswer = document.querySelector('input[name="' + question + '"]:checked').value;
+            var resultElement = document.getElementById(resultElementId);
+            if (userAnswer == correctAnswer) {
+                resultElement.innerHTML = "<span class='correcto'>¡Correcto!</span>";
+            } else {
+                resultElement.innerHTML = "<span class='incorrecto'>Lo siento, eso no es correcto.</span>";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="izquierda">
+            <a href="index.html"><img src="logo-edukids-removebg-preview.png" alt="Logo" draggable="false"></a>
+        </div>
+
+        <div class="derecha">
+            <a href="index_vocales.html">Vocales</a>
+            <a href="index_trasnporte.html">Medios de Transporte</a>
+            <a href="index_memoria.html">Clasificación de Animales</a>
+        </div>
+    </nav>
+    
+    <header class="header">
+        <h1>¡Bienvenido al Mundo de los Medios de Transporte!</h1>
+    </header>
+    
+    <main>
+        <div class="tipo-transporte">
+            <h3>Tierra</h3>
+            <div class="vehiculo">
+                <img src="carro.jpg" alt="Auto">
+                <h4>Auto</h4>
+                <p>¡Zoom, zoom! Los autos nos llevan a la escuela, al parque y a la casa de la abuela. Algunos son grandes y otros pequeños, algunos rojos y otros azules. ¡Hay autos para todos los gustos!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kkEWp19gc4o?si=UFrbU6BITXVTLpth" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="vehiculo">
+                <img src="BUS.jpg" alt="Autobús">
+                <h4>Autobús</h4>
+                <p>¡Brrum, brrum! Los autobuses son como grandes casas rodantes que llevan a muchos pasajeros a la vez. Son perfectos para ir al centro de la ciudad o a la playa.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Hp82bOaxZJU?si=2reQJm1xtDbypCuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="vehiculo">
+                <img src="CAMION.jpg" alt="Camión">
+                <h4>Camión</h4>
+                <p>¡Guau, guau! Los camiones son fuertes y poderosos. Transportan comida, juguetes y muchas otras cosas importantes. ¡Sin ellos, las tiendas estarían vacías!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cTgZHOGTNGY?si=5y_FE2NYvyJWyO6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+         </div>
+
+         <div class="tipo-transporte">
+            <h3>Cielo</h3>
+            <div class="vehiculo">
+                <img src="avion.jpg" alt="Avión">
+                <h4>Avión</h4>
+                <p>¡Vuela, vuela! Los aviones son como pájaros gigantes que nos llevan a lugares muy lejanos. Podemos ver las nubes desde arriba y sentir el viento en nuestro cabello. ¡Es una experiencia increíble!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sWr6MQel4tU?si=VQQoURnucwt07vd_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="vehiculo">
+                <img src="HELICOPTERO.jpg" alt="Helicóptero">
+                <h4>Helicóptero</h4>
+                <p>¡Rata-rata! Los helicópteros pueden girar en el aire como si fueran trompos. Son perfectos para llegar a lugares difíciles de alcanzar, como montañas o islas.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mi7e8UHQMcY?si=N8roxkEP4B_oupmr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="vehiculo">
+                <img src="GLOBO.jpg" alt="Globo aerostático">
+                <h4>Globo aerostático</h4>
+                <p>¡Flota, flota! Los globos aerostáticos son como enormes bolsas de aire que nos elevan suavemente hacia el cielo. Desde allí, podemos disfrutar de una vista panorámica de la ciudad o el campo.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iEaHJud4VBE?si=gTjRV5RPU5ySTD72" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+            </div>
+        </div>
+        
+        <div class="tipo-transporte">
+            <h3>Mar</h3>
+            <div class="vehiculo">
+                <img src="barco.jpg" alt="Barco">
+                <h4>Barco</h4>
+                <p>¡Splash, splash! Los barcos navegan por los mares y océanos, transportando personas y mercancías. Algunos son grandes como ciudades flotantes, mientras que otros son pequeños como veleros. ¡Hay barcos para todos los tipos de viajes!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kbZqyftj-BA?si=K8LhN7jyVRV5F9sy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <section>
+            <h2>¡¡ Hora de Jugar !!</h2>
+            <p>Con estos juegos, te divertirás mucho al encontrar la opción correcta.</p>
+        </section>
+        
+        <div class="juego">
+            <h2>¿Qué medio de transporte pertenece a la tierra?</h2>
+            <div class="hijos">
+                <label for="tierra1"><img src="auto.jpg" alt="Auto"></label>
+                <input type="radio" id="tierra1" name="transporte1" value="tierra"><br>
+                <label for="cielo1"><img src="avion.jpg" alt="Avión"></label>
+                <input type="radio" id="cielo1" name="transporte1" value="cielo"><br>
+                <label for="mar1"><img src="barco.jpg" alt="Barco"></label>
+                <input type="radio" id="mar1" name="transporte1" value="mar"><br>
+            </div>
+            <button onclick="checkAnswer('transporte1', 'tierra', 'resultado1')">Comprobar respuesta</button>
+            <div id="resultado1" class="resultado"></div>
+        </div>
+    
+        <div class="juego">
+            <h2>¿Qué medio de transporte pertenece al aire?</h2>
+            <div class="hijos">
+                <input type="radio" id="tierra2" name="transporte2" value="tierra">
+                <label for="tierra2"><img src="auto.jpg" alt="Auto" onclick="selectImage('tierra2')"></label>
+                <input type="radio" id="cielo2" name="transporte2" value="cielo">
+                <label for="cielo2"><img src="avion.jpg" alt="Avión" onclick="selectImage('cielo2')"></label>
+                <input type="radio" id="mar2" name="transporte2" value="mar">
+                <label for="mar2"><img src="barco.jpg" alt="Barco" onclick="selectImage('mar2')"></label>
+            </div>
+            <button onclick="checkAnswer('transporte2', 'cielo', 'resultado2')">Comprobar respuesta</button>
+            <div id="resultado2" class="resultado"></div>
+        </div>
+        
+        <div class="juego">
+            <h2>¿Qué medio de transporte pertenece al mar?</h2>
+            <div class="hijos">
+                <input type="radio" id="tierra3" name="transporte3" value="tierra">
+                <label for="tierra3"><img src="auto.jpg" alt="Auto" onclick="selectImage('tierra3')"></label>
+                <input type="radio" id="cielo3" name="transporte3" value="cielo">
+                <label for="cielo3"><img src="avion.jpg" alt="Avión" onclick="selectImage('cielo3')"></label>
+                <input type="radio" id="mar3" name="transporte3" value="mar">
+                <label for="mar3"><img src="barco.jpg" alt="Barco" onclick="selectImage('mar3')"></label>
+            </div>
+            <button onclick="checkAnswer('transporte3', 'mar', 'resultado3')">Comprobar respuesta</button>
+            <div id="resultado3" class="resultado"></div>
+        </div>
+        
+        
+
+    <script>
+        function selectImage(id) {
+    var selectedImage = document.getElementById(id);
+    var juegoContainer = selectedImage.closest('.juego');
+    var radios = juegoContainer.querySelectorAll('input[type="radio"]');
+    
+    radios.forEach(function(radio) {
+        radio.checked = false;
+    });
+    
+    selectedImage.previousElementSibling.checked = true;
+}
+
+
+
+    </script>
+</body>
+</html>    
+
+
+ 

@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.nav-bar {
+    background-color: #ff6f61;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: IN 1s forwards;
+}
+
+.nav-bar .izquierda img {
+    width: 200px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #ff9a8d;
+}
+
+.title {
+    text-align: center;
+    margin-top: 40px;
+    color: #333;
+    font-size: 36px;
+    text-transform: uppercase;
+    animation: FADEIN 1s forwards;
+}
+
+.descrip {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: ZOOMIN 1s forwards;
+}
+
+.descrip .info_pag,
+.descrip .info_juegos,
+.extra .info_pag,
+.extra .info_juegos {
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    padding: 40px;
+    width: calc(45% - 80px);
+    border-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    animation: FADEINFO 1s forwards;
+}
+
+.descrip .info_pag h2,
+.descrip .info_juegos h2,
+.extra .info_pag h2,
+.extra .info_juegos h2 {
+    color: #ff6f61;
+    font-size: 28px;
+}
+
+.juegos_menu {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.juegos_menu div {
+    border-radius: 50%;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+}
+
+.juegos_menu div:hover {
+    transform: scale(1.1);
+}
+
+.juegos_menu div.selected,
+.juegos_menu div.selected:hover {
+    background-color: lightcoral;
+}
+
+.menu_txt {
+    margin: 60px;
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+
+.button-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border-radius: 30px;
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px 40px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff9a8d;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+@keyframes IN {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes FADEIN {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ZOOMIN {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes FADEINFO {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.l1 {
+    color: red;
+}
+
+.banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+      height: 60px;
+      padding: 0 20px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .descrip {
+      flex-wrap: nowrap;
+    }
+  
+    .descrip .info_pag,
+    .descrip .info_juegos,
+    .extra .info_pag,
+    .extra .info_juegos {
+      width: 100%;
+      margin: 20px 0;
+    }
+  
+    .juegos_menu {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .juegos_menu div {
+      margin: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 800px) {
+    .nav-bar {
+      height: 60px;
+      padding: 0 20px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .descrip {
+      flex-wrap: nowrap;
+    }
+  
+    .descrip .info_pag,
+    .descrip .info_juegos,
+    .extra .info_pag,
+    .extra .info_juegos {
+      width: 45%;
+      margin: 20px 10px;
+    }
+  
+    .juegos_menu {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .juegos_menu div {
+      margin: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 801px) {
+    .descrip .info_pag,
+    .descrip .info_juegos,
+    .extra .info_pag,
+    .extra .info_juegos {
+      width: 45%;
+      margin: 20px 10px;
+    }
+  }
+  

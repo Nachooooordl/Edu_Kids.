@@ -1,0 +1,351 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.nav-bar, .header {
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 40px;
+}
+
+.nav-bar .izquierda img {
+    width: 200px;
+}
+
+.nav-bar .derecha a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar .derecha a:hover {
+    color: #ff9a8d;
+}
+
+.header {
+    text-align: center;
+    padding: 30px;
+    color: black;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.tipo-transporte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vehiculo {
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vehiculo img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+
+h2 {
+    font-size: 30px;
+    color: #1976D2;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.introduccion {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.tipos-transporte h2 {
+    color: #1976D2;
+}
+
+.tipo-transporte .vehiculo:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.juego {
+    margin-top: 40px;
+}
+
+.juego .hijos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.juego .hijos label {
+    margin: 0 15px;
+}
+
+.juego .hijos img {
+    width: 100px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+
+.juego .hijos input {
+    visibility: hidden;
+}
+
+.juego .hijos label img {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+.juego .hijos input:checked + label img {
+    border-color: #3F51B5;
+}
+
+.juego button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3F51B5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.juego {
+    margin-top: 40px;
+    position: relative; 
+}
+
+.juego .hijos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.juego .hijos label {
+    margin: 0 15px;
+}
+
+.juego .hijos img {
+    width: 100px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+
+.juego .hijos input {
+    visibility: hidden;
+}
+
+.juego .hijos input:checked + label img {
+    border-color: #3F51B5;
+}
+
+.juego .hijos input:checked + label img {
+    border-color: #3F51B5;
+}
+
+.juego .hijos input:checked + label img {
+    border-color: #3F51B5;
+}
+
+.juego .hijos input:checked + label img {
+    border-color: #3F51B5;
+}
+
+.juego .hijos input:checked + label img {
+    border-color: #3F51B5;
+}
+
+.juego input:checked + .hijos {
+    background-color: #f0f0f0; 
+}
+
+.juego button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3F51B5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.juego button:hover {
+    background-color: #303F9F;
+}
+
+
+.resultado {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.resultado span.correcto {
+    color: green;
+    font-weight: bold;
+}
+
+.resultado span.incorrecto {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .game-board {
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(4, 80px);
+        gap: 8px;
+    }
+
+    .card {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .nav-bar .derecha {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-bar .izquierda img {
+      width: 150px;
+    }
+  
+    .nav-bar a {
+      font-size: 16px;
+    }
+  
+    .tipo-transporte {
+      flex-direction: column;
+    }
+  
+    .vehiculo {
+      width: 100%;
+    }
+  
+    .juego .hijos {
+      flex-direction: column;
+    }
+  
+    .juego .hijos label {
+      margin: 10px 0;
+    }
+  
+    .juego .hijos img {
+      width: 150px;
+    }
+  
+    .juego button {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 800px) {
+    .nav-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .nav-bar .derecha {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-bar .izquierda img {
+      width: 150px;
+    }
+  
+    .nav-bar a {
+      font-size: 16px;
+    }
+  
+    .tipo-transporte {
+      flex-direction: column;
+    }
+  
+    .vehiculo {
+      width: 100%;
+    }
+  
+    .juego .hijos {
+      flex-direction: column;
+    }
+  
+    .juego .hijos label {
+      margin: 10px 0;
+    }
+  
+    .juego .hijos img {
+      width: 150px;
+    }
+  
+    .juego button {
+      width: 100%;
+    }
+  }
+  
+
+  
